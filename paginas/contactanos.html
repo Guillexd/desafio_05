@@ -11,25 +11,36 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../estilos.css">
+
+    <!-- ANIMATION -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <title>Contáctanos</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid d-flex ">
-                <a class="navbar-brand" href="#">
+    <header class="sticky-lg-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="--bs-bg-opacity: .25;">
+
+            <div class="container-fluid">
+
+                <!-- LOGO Y NOMBRE -->
+                <a class="navbar-brand animate__animated animate__fadeInDown" href="../index.html">
                     <img src="../imagen/logoprincipal.png" alt="logoprincipal" width="40" height="40">
-                    HOTEL
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <h1 class="animate__animated animate__fadeInDown">HOTEL</h1>
+                <button class="navbar-toggler animate__animated animate__fadeInDown" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+                <!-- NAVEGACIÓN -->
+                <div class="collapse navbar-collapse justify-content-end animate__animated animate__fadeInDown"
+                    id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="informacion.html">Información</a>
@@ -44,13 +55,69 @@
                             <a class="nav-link" href="opiniones.html">Opiniones</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contactanos.html">Contáctanos</a>
+                            <a class="nav-link" href="contactanos.html">Contáctanos</a>
                         </li>
                     </ul>
                 </div>
             </div>
+
         </nav>
     </header>
+
+    <!-- CONTENIDO PRINCIPAL INDEX.HTML -->
+    <main>
+
+    </main>
+
+    <!-- PIE DE PÁGINAS -->
+    <div class="bg-light redondeo" style="--bs-bg-opacity: .5;">
+        <br>
+    </div>
+    <footer class="bg-light" style="--bs-bg-opacity: .5;">
+
+        <section class="container">
+            <div class="row d-flex flex-wrap align-items-center py-3 border-top">
+                <div class="col-12 col-lg-4 d-flex justify-content-evenly ">
+                    <a href="https://www.facebook.com" target="_blank"><img src="../imagen/fb.png" alt="facebook"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="../imagen/tw.png" alt="twitter"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="../imagen/inst.png"
+                            alt="instagram"></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="../imagen/youtube.png"
+                            alt="youtube"></a>
+                    <a href="https://www.tiktok.com" target="_blank"><img src="../imagen/tiktok.png" alt="tik tok"></a>
+                </div>
+
+
+                <ul class="nav col-12 col-lg-8 justify-content-sm-center justify-content-lg-end px-3 mt-3">
+                    <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="informacion.html" class="nav-link px-2 text-muted">Info</a>
+                    </li>
+                    <li class="nav-item"><a href="nosotros.html" class="nav-link px-2 text-muted">Nosotros</a>
+                    </li>
+                    <li class="nav-item"><a href="preguntas.html" class="nav-link px-2 text-muted">Preguntas</a>
+                    </li>
+                    <li class="nav-item"><a href="opiniones.html" class="nav-link px-2 text-muted">Opiniones</a>
+                    </li>
+                    <li class="nav-item"><a href="contactanos.html" class="nav-link px-2 text-muted">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="footersectionDos">
+            <div class="d-flex justify-content-center">
+                <div class="d-lg-flex justify-content-center">
+                    <p class="pe-lg-5"><img class="pe-3" src="../imagen/logocellphone.png" alt="telefono">01-23-45-67-89
+                    </p>
+                    <p class="pe-lg-5"><img class="pe-3" src="../imagen/logogmail.png"
+                            alt="correo">enriquejunior@gmail.com
+                    </p>
+                    <p><img class="pe-3" src="../imagen/logomaps.png" alt="dirección">Av.Narnia 1234567</p>
+                </div>
+            </div>
+        </section>
+
+    </footer>
 
 
 
