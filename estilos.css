@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #8360c3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2ebf91, #8360c3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* HEADER DE LAS PÁGINAS*/
+        /* transiciones */
+a:hover {
+    transform: scale(1.1);
+    transition: all .2s ease;
+}
+h1:hover{
+    transform: scale(1.2);
+    transition: all .3s ease ;
+}
+img:hover {
+    transform: scale(1.2);
+    transition: all .3s ease;
+}
+
+        /* modificando header */
+header {
+    position: sticky;
+    top: 0;
+}
+/* FOOTER DE LAS PÁGINAS */
+.redondeo{
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
+.footerul, .link2{
+    text-decoration: none;
+    list-style: none;
+}
+footer .pie:hover{
+    transform: scale(1.2);
+    transition: all .3s ease;
+}
+footer{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 20vh;
+}
+
+        /* PRIMER DIV */
+        .ffirst{
+            background-color: #2ebf91;
+        }
+.footerul{
+    display: inline-flex;
+    padding: 0;
+}
+.pie{
+    padding-left: 20px;
+    background-color: cadetblue;
+}
+
+        /* SEGUNDO DIV */
+.fsecond{
+    background-color: #8360c3;
+    display: flex;
+    justify-content: space-between;
+    align-self: end;
+}
+.fsecond img{
+    padding-left: 50px;
+}
