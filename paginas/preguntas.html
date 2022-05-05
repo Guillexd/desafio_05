@@ -69,9 +69,119 @@
         </nav>
     </header>
 
-    <!-- CONTENIDO PRINCIPAL INDEX.HTML -->
-    <main>
+    <!-- CONTENIDO PRINCIPAL PREGUNTAS.HTML -->
+    <main class="container my-2 my-md-4  acordeonmain" id="premain">
+        <h2>Preguntas frecuentes</h2>
+        <section class="accordion mb-4" id="accordionExample">
+            <div class="accordion-item bg-secondary" style="--bs-bg-opacity:.25">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button bg-warning" style="--bs-bg-opacity:.5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        ¿Puedo cancelar o modificar una reserva de hotel?, ¿Qué gastos puede generar una cancelación o modificación de reserva?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Sí, sí puedes.</strong> Pero ten en cuenta que dicha anulación puede conllevar unos gastos de cancelación. Al realizar la
+                        reserva, se informa de la política de cancelación, o bien ésta figura en las condiciones generales.
+                        Estos gastos de cancelación son variables según el destino, el proveedor, la tarifa reservada y las fechas de antelación
+                        a la anulación.
+                        
+                        Para anular o modificar una reserva, se puede mandar un e-mail a través del apartado CONTACTO, a través del apartado MIS
+                        RESERVAS, o llamando directamente al 123456789.
+                        
+                        El coste por modificación de reserva es de 10 euros, además de la diferencia de tarifa si se diera el caso.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-info" style="--bs-bg-opacity:.25">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed bg-warning" style="--bs-bg-opacity:.5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Cómo sé si mi reserva de hotel se ha confirmado con éxito?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Una vez finalizado el proceso de compra, aparecerá en tu pantalla un número de localizador y <strong>recibirás un e-mail</strong> con el
+                        estado de la reserva (confirmada o pendiente de confirmar).
+                        
+                        También puedes comprobar el estado en el apartado de MIS RESERVAS.
+                        
+                        Deberás revisar tu correo electrónico en las 24/48 horas siguientes al momento de la compra para comprobar que te ha
+                        llegado el e-mail de confirmación junto con el bono que deberás presentar en el establecimiento.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-light" style="--bs-bg-opacity:.25">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed bg-warning" style="--bs-bg-opacity:.5" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ¿Si ocurre algún error en el proceso de reserva se confirma igualmente la reserva de hotel?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Si al final del proceso de reserva te apareciera un mensaje de error <strong>debes ponerte en contacto con nosotros</strong> a través del
+                        apartado de CONTACTO o llamando al 123456789 para verificar el estado de la reserva.
+                        
+                        Nuestros agentes intentarán confirmarte en línea la confirmación o no de la reserva.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-warning" style="--bs-bg-opacity:.25">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button bg-warning" style="--bs-bg-opacity:.5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                        aria-expanded="true" aria-controls="collapseFour">
+                        ¿Qué incluye el precio de una reserva de hotel?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        El precio incluye el <strong>alojamiento</strong>  en el establecimiento para los pasajeros y según tipo de acomodación y <strong>régimen
+                        alimenticio</strong>  que figura en la documentación; además de los impuestos IVA, IGIC.
+                        
+                        Igualmente algunos hoteles pueden pedir una fianza que será devuelta a la salida del hotel.
+                        
+                        Te recordamos que normalmente las bebidas no están incluidas en las comidas.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-danger" style="--bs-bg-opacity:.25">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button bg-warning" style="--bs-bg-opacity:.5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                        aria-expanded="true" aria-controls="collapseFive">
+                        ¿Puedo realizar reservas para el mismo día?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Sí,</strong>  tan solo deberás realizar la búsqueda en la página web y te enviaremos el bono que debes
+                        entregar... cuando llegues al hotel tu habitación estará lista.
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="pt-3 pb-2" id="sectionpre">
+            <label class="p-3 text-center" for="">¿Algo que quieras saber?</label>
+
+            <input class="p-3" type="email" name="email" id="" placeholder="Tu correo">
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu pregunta aquí"></textarea>
+
+            <div id="botonpre" class="d-flex justify-content-evenly mt-3">
+                <button type="button" class="btn btn-secondary btn-lg">Borrar pregunta</button>
+
+                <button type="button" class="btn btn-primary btn-lg">Enviar pregunta</button>
+            </div>
+            
+        </section>
     </main>
 
     <!-- PIE DE PÁGINAS -->
