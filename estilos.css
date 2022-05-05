@@ -7,12 +7,10 @@
 }
 body{
     background: #8360c3;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2ebf91, #8360c3);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 /* MOBILE FIRST */
 
 /* FOOTER DE LAS PÁGINAS */
@@ -44,6 +42,7 @@ body{
     font-size: 3em;
     text-align: center;
     margin-top: 5px;
+    color: #f12711;
 }
         /* ajustando imagen y texto */
 #tercerSection img {
@@ -52,6 +51,28 @@ body{
     margin: auto;
     height: 40vh;
 }
+
+/* CONTENIDO PRINCIPAL INFORMACION.HTML */
+
+        /* ajustando video e imágenes */
+#infomain iframe{
+    border-radius: 5%;
+    width: 100%;
+    height: 50vh;
+}
+
+/* modificando h2 */
+#infomain h2 {
+    font-family: serif;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 5px;
+    color: #f12711;
+}
+#infomain img{
+    height: 40%;
+}
+
 /* MEDIA QUERY */
 @media screen and (min-width: 992px){
     /* HEADER DE LAS PÁGINAS*/
@@ -84,6 +105,9 @@ body{
     #footersectionDos div div{
         width: 70%;
     }
+    #footersectionDos p{
+        text-align: center;
+    }
 
     /* CONTENIDO PRINCIPAL DE INDEX.HTML */
 
@@ -111,6 +135,13 @@ body{
     #tercerSection
     div {
         width: 45%;
+    }
+
+    /* CONTENIDO PRINCIPAL INFORMACION.HTML */
+    
+            /* modificando h2 */
+    #infomain h2 {
+        font-size: 5em;
     }
 
 }
