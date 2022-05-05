@@ -4,6 +4,10 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: 'Lora',
+    serif;
+    font-family: 'Open Sans',
+    sans-serif;
 }
 body{
     background: #8360c3;
@@ -61,7 +65,7 @@ body{
     height: 50vh;
 }
 
-/* modificando h2 */
+        /* modificando h2 */
 #infomain h2 {
     font-family: serif;
     font-size: 3em;
@@ -71,6 +75,57 @@ body{
 }
 #infomain img{
     height: 40%;
+}
+/* CONTENIDO PRINCIPAL NOSOTROS.HTML  */
+        /* modificando h2 */
+#nosmain h2 {
+    font-family: serif;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 5px;
+    color: #f12711;
+}
+        /* asignando áreas */
+.fondoEmp{
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "contenido1"
+    "contenido2"
+    "contenido3"
+    "aside"
+    ;
+}
+.fondoEmp h2{
+    grid-area: titulo;
+}
+.empSectUno{
+    grid-area: contenido1;
+}
+.empSectDos{
+    grid-area: contenido2;
+}
+.empSectTres{
+    grid-area: contenido3;
+    border-bottom: solid 1px black;
+    padding-bottom: 30px;
+}
+.fondoEmp aside {
+    grid-area: aside;
+}
+
+        /* ajustando tamaño de imágenes */
+.fondoEmp img {
+    width: 90%;
+    border-radius: 50%;
+}
+.imagenEmp{
+    margin: auto;
+}
+.fondoEmp aside img{
+    border-radius: 10%;
+    width: 90%;
+    height: 35vh;
 }
 
 /* MEDIA QUERY */
@@ -143,5 +198,59 @@ body{
     #infomain h2 {
         font-size: 5em;
     }
-
+    /* CONTENIDO PRINCIPAL NOSOTROS.HTML  */
+            /* modificando h2 */
+    #nosmain h2 {
+        font-size: 5em;
+    }
+            /* asignando areas */
+    .fondoEmp {
+    grid-template-areas:
+        "titulo titulo"
+        "contenido1 aside"
+        "contenido2 aside"
+        "contenido3 aside"
+    ;
+    grid-template-columns: 59% 40%;
+    }
+    
+    .fondoEmp h2 {
+        grid-area: titulo;
+    }
+    
+    .empSectUno {
+        grid-area: contenido1;
+    }
+    .empSectUno p {
+        width: 85%;
+    }
+    .empSectDos {
+        grid-area: contenido2;
+    }
+    .empSectDos p {
+        width: 100%;
+    }
+    .empSectTres {
+        grid-area: contenido3;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .empSectTres p {
+        width: 85%;
+    }
+    .fondoEmp aside {
+        grid-area: aside;
+        border-left: solid 1px black;
+    }
+            /* ajustando tamaño de imágenes */
+    .fondoEmp img{
+        width: 50%;
+        border-radius: 50%;
+    }
+    .imagenEmp {
+        margin: 0;
+    }
+    .fondoEmp aside img {
+        height: 25vh;
+    }
 }
