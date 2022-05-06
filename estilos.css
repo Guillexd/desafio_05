@@ -169,6 +169,14 @@ body{
     margin: auto;
 }
 /* CONTENIDO PRINCIPAL OPINIONES.HTML */
+            /* modificando h2 */
+#opimain h2 {
+    font-family: serif;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 5px;
+    color: #f12711;
+}
             /* definiendo áreas */
 #mainopi {
     display: grid;
@@ -279,7 +287,136 @@ body{
 }
 
 /* CONTENIDO PRINCIPAL CONTÁCTANOS.HTML */
+.fondoCont {
+    grid-area: main;
+    background-image: url('imagen/tablero.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.fondoCont h2 {
+    font-family: serif;
+    font-size: 3em;
+    margin-top: 5px;
+    color: #f12711;
+}
+
+            /* FORMULARIO */
+.contForm {
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7f7f8fb7;
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
+
+            /* PRIMER DIV */
+
+.contDivUno {
+    padding-top: 20px;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.contDivUno input {
+    padding: 10px 30px;
+    font-size: 20px;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+
+            /* SEGUNDO DIV */
+.contDivDos {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.opcion {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.verde:active {
+    background-color: #58bb2a80;
+}
+
+.rojo:active {
+    background-color: #bb2a3680;
+}
+
+.azul:active {
+    background-color: #992abb80;
+}
+
+.gris:active {
+    background-color: #00000080;
+}
+
+.amarillo:active {
+    background-color: #5ce227b9;
+}
+
+            /* TERCER DIV */
+.contDivTres textarea {
+    font-size: 20px;
+    width: 80vw;
+    height: 50vh;
+    border-radius: 5%;
+    padding: 20px;
+}
+
+
+.send:active {
+    background-color: rgba(117, 250, 157, 0.856);
+}
+
+/* OCULTANDO E INTERACTUANDO CON CHECKBOX, SEGUNDO DIV*/
+#individual {
+    display: none;
+}
+
+#matrimonial {
+    display: none;
+}
+
+#doble {
+    display: none;
+}
+
+#familiar {
+    display: none;
+}
+
+#compartida {
+    display: none;
+}
+
+#individual:checked~.verde {
+    background-color: rgba(38, 198, 209, 0.726);
+}
+
+#matrimonial:checked~.rojo {
+    background-color: rgba(38, 198, 209, 0.726);
+}
+
+#doble:checked~.azul {
+    background-color: rgba(38, 198, 209, 0.726);
+}
+
+#familiar:checked~.gris {
+    background-color: rgba(38, 198, 209, 0.726);
+}
+
+#compartida:checked~.amarillo {
+    background-color: rgba(38, 198, 209, 0.726);
+}
 
 
 /* MEDIA QUERY */
@@ -410,7 +547,6 @@ body{
     /* CONTENIDO PRINCIPAL PREGUNTAS.HTML */
             /* modificando h2 */
     #premain h2 {
-        font-family: serif;
         font-size: 5em;
     }
             /* modificando sections */
@@ -434,6 +570,10 @@ body{
     }
 
     /* CONTENIDO PRINCIPAL OPINIONES.HTML */
+                /* modificando h2 */
+    #opimain h2 {
+        font-size: 5em;
+    }
                 /* definiendo áreas */
     #mainopi{
         grid-template-columns: 1fr 1fr 1fr;
@@ -477,4 +617,78 @@ body{
     }
     
     /* CONTENIDO PRINCIPAL CONTÁCTANOS.HTML */
+                    /* modificando h2 */
+    .fondoCont h2 {
+        font-size: 5em;
+    }
+                    /* FORMULARIO */
+    .contForm {
+        width: 50vw;
+    }
+    
+                    /* PRIMER DIV */
+    
+    .contDivUno {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+    
+    .contDivUno input {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0;
+        width: 40%;
+        padding: 15px;
+    }
+    
+                    /* SEGUNDO DIV */
+    
+    .contDivDos label {
+        padding: 20px 8vw;
+        cursor: pointer;
+        font-size: 25px;
+        font-weight: 1000;
+    }
+    
+    .opcion {
+        padding: 20px;
+        margin: 10px 0;
+    }
+    
+    .verde:hover {
+        background-color: #58bb2a80;
+    }
+    
+    .rojo:hover {
+        background-color: #bb2a3680;
+    }
+    
+    .azul:hover {
+        background-color: #992abb80;
+    }
+    
+    .gris:hover {
+        background-color: #00000080;
+    }
+    
+    .amarillo:hover {
+        background-color: #5ce227b9;
+    }
+    
+                    /* TERCER DIV */
+    
+    .contDivTres {
+        display: flex;
+        width: 52vw;
+    }
+    
+    .contDivTres textarea {
+        font-size: 20px;
+        width: 80%;
+        height: 30vh;
+        margin: auto;
+    }
+    
 }

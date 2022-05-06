@@ -70,8 +70,60 @@
     </header>
 
     <!-- CONTENIDO PRINCIPAL INDEX.HTML -->
-    <main>
-
+    <main class="fondoCont">
+        <h2 class="text-center">Contáctanos</h2>
+        <!-- FORMULARIO -->
+        <form class="contForm">
+    
+            <!-- PRIMER DIV -->
+            <div class="contDivUno">
+                <input type="text" placeholder="Nombre">
+    
+                <input type="text" placeholder="Apellidos">
+            </div>
+    
+            <!-- SEGUNDO DIV -->
+            <div class="contDivDos">
+                <input id="individual" type="checkbox">
+                <div class="opcion verde">
+                    <label class="ejemplo" for="individual">Individual</label>
+                </div>
+    
+    
+                <input id="matrimonial" type="checkbox">
+                <div class="opcion rojo">
+                    <label for="matrimonial">Matrimonial</label>
+                </div>
+    
+    
+                <input id="doble" type="checkbox">
+                <div class="opcion azul">
+                    <label for="doble">Doble cama</label>
+                </div>
+    
+    
+                <input id="familiar" type="checkbox">
+                <div class="opcion gris">
+                    <label for="familiar">Familiar</label>
+                </div>
+    
+    
+                <input id="compartida" type="checkbox">
+                <div class="opcion amarillo">
+                    <label for="compartida">Compartida</label>
+                </div>
+    
+            </div>
+    
+            <!-- TERCER DIV -->
+            <div class="contDivTres">
+                <textarea name="" id="" cols="59    " rows="20" placeholder="Comentarios"></textarea>
+            </div>
+    
+            <!-- INPUT -->
+            <!-- <input class="send" type="button" value="Enviar"> -->
+            <button type="button" class="btn btn-primary btn-lg my-3 bg-dark" style="--bs-bg-opacity:.75">Enviar formulario</button>
+        </form>
     </main>
 
     <!-- PIE DE PÁGINAS -->
